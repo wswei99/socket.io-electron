@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://null.jsbin.com/runner -->
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JS Bin Runner</title>
+
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+      }
+      
+      iframe {
+        border: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <link type="text/css" rel="stylesheet" href="css/runnerStyle.css">
+    <script type="text/javascript" charset="utf-8" src="js/page_context.js"></script>
+  </head>
+
+  <body screen_capture_injected="true">
+    <div id="sandbox-wrapper"></div>
+    <script>
+      if('serviceWorker' in navigator && location.origin.indexOf('null') !== -1) {
+        navigator.serviceWorker.register('/sw-runner.js', {
+          scope: '/'
+        });
+      }
+    </script>
+    <script src="js/runner-4.0.4.min.js"></script>
+
+  </body>
+
+</html>

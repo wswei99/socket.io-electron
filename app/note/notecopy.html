@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://demo.doyoe.com/share/html5quest/#/step1 -->
+<html lang="zh-cn" style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>HTML5初探 @doyoe | powered by impress.js</title>
+<meta name="description" content="web前端开发技术分享：HTML5初探；web前端实验室全情奉献">
+<meta name="keywords" content="css3,html5,JavaScript,js,css,html,web前端,web标准,交互设计,用户体验,UE,搜索引擎优化,SEO">
+<meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com">
+<meta name="copyright" content="www.doyoe.com">
+<meta name="robots" content="all">
+<!--[if lte IE 8]>
+<script src="js/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="./notecopy_files/style.css">
+<link type="text/css" rel="stylesheet" href="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/page_context.js"></script></head>
+<body screen_capture_injected="true" style="height: 100%; overflow: hidden;">
+<div id="impress" class="step-step1" style="position: absolute; transform-origin: left top 0px; transition: all 1s ease-in-out 500ms; transform-style: preserve-3d; top: 50%; left: 50%; perspective: 1000px; transform: scaleX(1) scaleY(1) scaleZ(1);"><div class="canvas" style="position: absolute; transform-origin: left top 0px; transition: all 1s ease-in-out 0ms; transform-style: preserve-3d; transform: rotateZ(-90deg) rotateY(0deg) rotateX(0deg) translate3d(0px, 1000px, 0px);">
+	<section id="step1" class="step active" data-x="0" data-y="-1000" data-rotate="90" style="position: absolute; transform: translate(-50%, -50%) translate3d(0px, -1000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(90deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<hgroup class="title">
+			<h1>HTML5初探</h1>
+			<h2><a href="http://weibo.com/doyoe" target="_blank">@doyoe</a></h2>
+		</hgroup>
+	</section>
+	<section id="what" class="step" data-x="1000" data-y="-1000" style="position: absolute; transform: translate(-50%, -50%) translate3d(1000px, -1000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1 class="header">HTML5是什么？</h1>
+	</section>
+	<section id="step2" class="step slide" data-x="1000" data-y="0" style="position: absolute; transform: translate(-50%, -50%) translate3d(1000px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>HTML5是什么？</h1>
+		<div class="cont">
+			<ul>
+				<li>狭义HTML5</li>
+				<li>广义HTML5</li>
+				<li>HTML5新特性</li>
+			</ul>
+		</div>
+		<h2>HTML5能做什么？</h2>
+		<div class="cont">
+			<ul>
+				<li>OS: <a href="http://www.alessioatzeni.com/mac-osx-lion-css3/" target="blank" class="external">Mac OS X Lion CSS3</a></li>
+				<li>特效：<a href="http://lights.elliegoulding.com/" target="blank" class="external">Lights With Canvas</a></li>
+				<li>游戏：<a href="http://www.cuttherope.ie/" target="_blank" class="external">Cut the Rope HTML5版</a></li>
+				<li>web：<a href="http://alteredqualia.com/canvasmol/" target="_blank" class="external">元素周期表</a>、<a href="http://intacto10years.com/index_start.php" target="_blank" class="external">inTacto 10 Years</a>、<a href="http://hakim.se/experiments/html5/sketch/" target="_blank" class="external">Sketch</a></li>
+			</ul>
+		</div>
+	</section>
+	<section id="step3" class="step slide" data-x="2000" data-y="0" style="position: absolute; transform: translate(-50%, -50%) translate3d(2000px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>什么是狭义HTML5？</h1>
+		<div class="cont">
+			<ul>
+				<li>仍是<dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn>；</li>
+				<li>新标记、新属性、旧标记和属性的增删改</li>
+				<li>1999年制定的HTML 4.01和XHTML 1.0标准的升级版；</li>
+				<li>前身是2004年<a href="http://zh.wikipedia.org/wiki/WHATWG" class="external" target="_blank" title="Web Hypertext Application Technology Working Group">WHATWG</a>提出的Web Applications 1.0，2007年被<a href="http://zh.wikipedia.org/wiki/W3C" class="external" target="_blank" title="World Wide Web Consortium">W3C</a>接纳；</li>
+			</ul>
+			<div class="notes">
+				<p>早期的HTML语法被定义成较松散的规则，以助于不熟悉网络出版的人采用。但从2000起，web开发人员开始习惯使用XML语法的XHTML 1.0，虽然HTML5不是基于XHTML的，但建议使用XHTML的语法。这是一个良好的开始，也应该保持下去。一致的代码风格和规范，不仅爽心悦目，也让项目易于读写和维护。</p>
+				<p>本来计划用来替换HTML4.01的具有更严格语义和语法的XHTML 2.0，因为是一个彻底重构的激进版本，这一计划内部受阻后，HTML5才浮出水面。部分相关链接：<a href="http://dig.csail.mit.edu/breadcrumbs/node/166" target="_blank">Reinventing HTML</a></p>
+			</div>
+		</div>
+	</section>
+	<section id="step4" class="step slide" data-x="3000" data-y="0" style="position: absolute; transform: translate(-50%, -50%) translate3d(3000px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>什么是广义HTML5？</h1>
+		<div class="cont">
+			<ul>
+				<li>技术组合：包括HTML, CSS, JavaScript, Web Application API, 甚至<dfn><abbr title="Scalable Vector Graphics">SVG</abbr></dfn>。类同<dfn><abbr title="Asynchronous JavaScript And XML">ajax</abbr></dfn>；</li>
+				<li>现在热度无限HTML5，人们在谈起它时，更多是在阐述一种概念，这有点像当年的web2.0；</li>
+				<li>HTML5的出现，希望能减少对插件类的<dfn><abbr title="Rich Internet applications">RIA</abbr></dfn>的需求，如：flash, flex, silverlight等；</li>
+			</ul>
+			<div class="notes">
+				<p>误区：一个普遍的误解是HTML5能够在网页中提供动画效果，这是不准确的。动画效果是由JavaScript和CSS实现的。</p>
+			</div>
+		</div>
+	</section>
+	<section id="step5" class="step slide" data-x="4000" data-y="0" style="position: absolute; transform: translate(-50%, -50%) translate3d(4000px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>HTML5新特性</h1>
+		<div class="cont">
+			<ul>
+				<li>新增更语义化和功能化标记，删除和修改部分旧标记；</li>
+				<li>更简洁的代码；</li>
+				<li>CSS3</li>
+				<li>JS API；</li>
+			</ul>
+		</div>
+	</section>
+	<section class="step" data-x="6000" data-y="600" data-rotate="90" id="step-7" style="position: absolute; transform: translate(-50%, -50%) translate3d(6000px, 600px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(90deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1 class="header">浏览器对HTML5的支持</h1>
+	</section>
+	<section id="step6" class="step slide" data-x="5000" data-y="0" style="position: absolute; transform: translate(-50%, -50%) translate3d(5000px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>PC端浏览器对HTML5的支持</h1>
+		<div class="cont">
+			<p class="img"><img src="./notecopy_files/support.png" alt="Browser support for html5"></p>
+			<div class="notes">
+				<p>总分数为475，可以清晰的看到当前高级浏览器（包括IE10）对HTML5的支持都达到了300分以上，即基本都支持了65%以上的HTML5新特性，而这已实现的65%左右的新特性正是我们最希望实现、也最实用的部分</p>
+			</div>
+		</div>
+		<footer>
+			<a href="http://html5test.com/" target="_blank" class="external">html5test</a>
+		</footer>
+	</section>
+	<section id="step7" class="step slide" data-x="5000" data-y="1000" style="position: absolute; transform: translate(-50%, -50%) translate3d(5000px, 1000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>移动端浏览器对HTML5的支持</h1>
+		<div class="cont">
+			<p class="img"><img src="./notecopy_files/support_mobile.png" alt="Mobile Browser support for html5"></p>
+			<div class="notes">
+				<p>从上图的数据中，我们可以看出，HTML5目前在移动端比PC端更具优势，而且再也不用为低版本的IE头痛</p>
+			</div>
+		</div>
+		<footer>
+			<a href="http://html5test.com/" target="_blank" class="external">html5test</a>
+		</footer>
+	</section>
+	<section id="step8" class="step slide" data-x="4000" data-y="1000" style="position: absolute; transform: translate(-50%, -50%) translate3d(4000px, 1000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>HTML5大有可为</h1>
+		<div class="cont">
+			<p>随着越来越多的互联网巨头对HTML5的看好，纷纷加入W3C期望参与到HTML5草案的制定，从一开始国外的Apple, Google, Yahoo, Opera, Mozilla，到后来的Microsoft，再到国内的华为，百度，UC，腾讯，360等。</p>
+			<p>浏览器厂商卖力的升级自家的产品，相信在未来几年内，整个互联网将会发生创造性的变化，用户将能最终享受到由于技术升级带来的好处。</p>
+		</div>
+		<div class="notes">
+			<p>微软从IE6到IE7用了10年，而从IE7到IE9，每个版本升级都只用了2年左右，再到不久即将发布的IE10，版本周期越来越短，而对这些版本的升级，很大一部分比重都在于对HTML5,CSS3和JavaScript的支持上，由此可见微软对HTML5重视程度。</p>
+		</div>
+	</section>
+	<section class="step" data-x="3000" data-y="-1000" data-rotate="90" id="step-11" style="position: absolute; transform: translate(-50%, -50%) translate3d(3000px, -1000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(90deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1 class="header">HTML5标记变化</h1>
+	</section>
+	<section id="step9" class="step slide" data-x="3000" data-y="1000" style="position: absolute; transform: translate(-50%, -50%) translate3d(3000px, 1000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>更语义化的新标记</h1>
+		<div class="cont">
+			<p>&lt;header&gt;, &lt;section&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;article&gt;, &lt;aside&gt;等等</p>
+			<p class="img"><img src="./notecopy_files/html-structure.png" alt="HTML VS. HTML5"></p>
+			<div class="notes">
+				<p>语义化的标记更能反映现代典型的web用法，将有利于搜索引擎的索引（即SEO）、小屏幕设备和视障人士使用，代码可读性增强；</p>
+			</div>
+		</div>
+	</section>
+	<section id="step10" class="step slide" data-x="2000" data-y="1000" style="position: absolute; transform: translate(-50%, -50%) translate3d(2000px, 1000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>更功能化的新标记</h1>
+		<div class="cont">
+			<p>&lt;audio&gt;, &lt;vedio&gt;, &lt;canvas&gt;, &lt;progress&gt;, &lt;meter&gt;, &lt;details&gt;等等</p>
+			<ul>
+				<li>
+					<code>vedio</code> demo: <a href="http://www.apple.com/html5/showcase/video/" class="external" target="_blank">Showcase of Apple</a>, <a href="http://www.html51.com/topic-demo-html5-video-simple.html" class="external" target="_blank">HTML5在线视频</a>, <a href="http://videojs.com/" class="external" target="_blank">videojs</a>, <a href="http://www.mediafront.org/" class="external" target="_blank">OSM</a>, <a href="http://camendesign.com/code/video_for_everybody/test.html" class="external" target="_blank">Video For Everybody</a>, <a href="http://flarevideo.com/" class="external" target="_blank">FlareVideo</a><p></p>
+					<p class="notes">video格式：Mpeg4(ch/sa/IE9), Ogg(ff/ch/op), WebM(ff/ch/op)</p>
+				</li>
+				<li><a href="http://www.apple.com/html5/showcase/audio/" class="external" target="_blank">Audio Showcase of Apple HTML5</a></li>
+				<li><a href="http://demo.doyoe.com/html5/progress/progress.htm" target="_blank">Progress Base Demo</a></li>
+				<li><a href="http://openrise.com/lab/PlasmaTree/" class="external" target="_blank">Canvas Plasmatree</a>、<a href="http://www.the389.com/7/3/" class="external" target="_blank">Canvas three</a>、<a href="http://bomomo.com/" class="external" target="_blank">Canvas bomomo</a>、<a href="http://dan.forys.co.uk/experiments/mesmerizer/" class="external" target="_blank">Canvas mesmerizer</a>、<a href="http://demo.surda.cn/burn-canvas-test.html" class="external" target="_blank">Canvas burn</a>、<a href="http://demo.surda.cn/tunneler-canvas.html" class="external" target="_blank">Canvas tunneler</a></li>
+			</ul>
+		</div>
+		<div class="notes">
+			<p><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-element/" target="blank" class="external">canvas</a> 元素使用 JavaScript 在网页上绘制图像。canvas 元素本身是没有绘图能力的，所有的绘制工作在 JavaScript 内部完成。画布是一个矩形区域，您可以控制其每一像素。canvas 拥有多种绘制路径、矩形、圆形、字符以及添加图像的方法。</p>
+		</div>
+	</section>
+	<section id="step11" class="step slide" data-x="1000" data-y="1000" style="position: absolute; transform: translate(-50%, -50%) translate3d(1000px, 1000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>删除了部分旧标记</h1>
+		<div class="cont">
+			<ul>
+				<li><code>acronym</code>, <code>applet</code>, <code>basefont</code>, <code>big</code>, <code>center</code>, <code>dir</code>, <code>font</code>, <code>frame</code>, <code>frameset</code>, <code>isindex</code>, <code>noframes</code>, <code>strike</code>, <code>tt</code><p></p></li>
+			</ul>
+			<div class="notes">这些被删除的旧标记要么可被其它标记代替，要么能用CSS实现，要么是无语义的</div>
+			<h2>&lt;acronym&gt;之于&lt;abbr&gt;：</h2>
+			<div class="notes">acronym与abbr标记都是用来表示缩写的，区别在abbr是常规的缩写，而acronym则是用来表示特定的首字母缩写。HTML5认为没有存在2个缩写标记的必要，于是选择移除acronym</div>
+			<h2>&lt;center&gt;之于CSS align property</h2>
+			<div class="code">
+				<span class="legend">从前：你可能这样实现元素居中</span>
+				<pre><code>&lt;center&gt;这里是要居中显示的内容&lt;/center&gt;</code></pre>
+			</div>
+			<div class="code">
+				<span class="legend">现在：我们更推荐这样实现</span>
+				<pre><code>div{text-align:center;}
+&lt;div&gt;这里是要居中显示的内容&lt;/div&gt;</code></pre>
+			</div>
+		</div>
+	</section>
+	<section id="step12" class="step slide" data-x="0" data-y="1000" style="position: absolute; transform: translate(-50%, -50%) translate3d(0px, 1000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>修改了部分旧标记</h1>
+		<div class="cont">
+			<ul>
+				<li><code>a</code>, <code>b</code>, <code>cite</code>, <code>hr</code>, <code>i</code>, <code>input</code>, <code>menu</code>, <code>meta</code>, <code>s</code>, <code>small</code>, <code>u</code></li>
+			</ul>
+			<div class="notes">这些被修改的标记，有的增加或删减了属性、功能，有的赋予了新的语义</div>
+			<h2>a标记的修改之一：</h2>
+			<div class="code">
+				<span class="legend">从前：a只能包含一些inline级别元素</span>
+				<pre><code>&lt;a href="#"&gt;inline node&lt;/a&gt;</code></pre>
+			</div>
+			<div class="code">
+				<span class="legend">现在：a允许你包含一个段落</span>
+				<pre><code>&lt;a href="#"&gt;
+	&lt;p&gt;A hyperlink that contains a paragraph.&lt;/p&gt;
+&lt;/a&gt;</code></pre>
+			</div>
+			<div class="notes">同时a标记的name属性被废弃，且新增了media属性，target属性也被修改</div>
+			<h2>i标记被赋予的语义：</h2>
+			<p>i标记现在被用来突出不同意见或语义</p>
+		</div>
+	</section>
+	<section class="step" data-x="-1000" data-y="1200" data-rotate="90" id="step-16" style="position: absolute; transform: translate(-50%, -50%) translate3d(-1000px, 1200px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(90deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1 class="header">更简洁的代码</h1>
+	</section>
+	<section id="step13" class="step slide" data-x="0" data-y="2000" style="position: absolute; transform: translate(-50%, -50%) translate3d(0px, 2000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>避免不必要的复杂</h1>
+		<div class="cont">
+			<h2>Doctype：</h2>
+			<div class="code">
+				<span class="legend">从前</span>
+				<p>&lt;!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</p>
+			</div>
+			<div class="code">
+				<span class="legend">现在</span>
+				<p>&lt;!DOCTYPE html"&gt;</p>
+			</div>
+			<h2>编码：</h2>
+			<div class="code">
+				<span class="legend">从前</span>
+				<p>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;</p>
+			</div>
+			<div class="code">
+				<span class="legend">现在</span>
+				<p>&lt;meta charset="utf-8" /&gt;</p>
+			</div>
+			<div class="notes">
+				<p>同时，用link元素引用样式表，type="text/css"是可以省略的；script元素的type=”text/javascript”也可以不写</p>
+			</div>
+		</div>
+	</section>
+	<section class="step" data-x="-1000" data-y="2000" data-rotate="180" id="step-18" style="position: absolute; transform: translate(-50%, -50%) translate3d(-1000px, 2000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(180deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1 class="header">超酷的CSS3</h1>
+	</section>
+	<section id="step14" class="step slide" data-x="1000" data-y="2000" style="position: absolute; transform: translate(-50%, -50%) translate3d(1000px, 2000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>文字遮罩效果</h1>
+		<div class="cont">
+			<p class="img"><img src="./notecopy_files/mask_text.png" alt="CSS3 Masking Text"></p>
+			<ul>
+				<li>DEMO: <a href="http://demo.doyoe.com/css3/background-clip/mask-text2.htm" target="_blank">上图实际效果</a></li>
+				<li>应用: <a href="http://demo.doyoe.com/css3/background-clip/mask-text.htm" target="_blank">CSS3 Mask text</a></li>
+				<li>应用: <a href="http://demo.doyoe.com/css3/background-clip/mask-text3.htm" target="_blank">CSS3光影划过文字效果</a></li>
+			</ul>
+		</div>
+		<div class="notes">
+			<p>这种效果以前可能更多出现在flash动画中，如今CSS3不过是信手拈来。</p>
+		</div>
+	</section>
+	<section id="step15" class="step slide" data-x="2000" data-y="2000" style="position: absolute; transform: translate(-50%, -50%) translate3d(2000px, 2000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>文字描边、镂空效果</h1>
+		<div class="cont">
+			<p class="img"><img src="./notecopy_files/stroke_text.png" alt="CSS3 Stroke Text"></p>
+			<ul>
+				<li>DEMO: <a href="http://demo.doyoe.com/css3/text-stroke/stroke-text.htm" target="_blank">CSS3文字描边效果</a></li>
+			</ul>
+			<p class="img"><img src="./notecopy_files/hollow_text.png" alt="CSS3 Hollow Text"></p>
+			<ul>
+				<li>DEMO: <a href="http://demo.doyoe.com/css3/text-fill-color/hollow-text.htm" target="_blank">CSS3文字镂空效果</a></li>
+			</ul>
+		</div>
+		<div class="notes">
+			<p>以前是不是从没试过不用图片，而直接使用css实现这种效果？那么，从现在开始，你可以去尝试看看，展示你的与众不同</p>
+		</div>
+	</section>
+	<section id="step16" class="step slide" data-x="3000" data-y="2000" style="position: absolute; transform: translate(-50%, -50%) translate3d(3000px, 2000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>圆角、阴影、半透明效果</h1>
+		<div class="cont">
+			<p class="img"><img src="./notecopy_files/radius.png" alt="CSS3 radius"></p>
+			<ul>
+				<li>DEMO: <a href="http://demo.doyoe.com/css3/border-radius/border-radius.htm" target="_blank">CSS3圆角效果</a></li>
+				<li>DEMO: <a href="http://demo.doyoe.com/css3/box-shadow/box-shadow.htm" target="_blank">CSS3阴影效果</a>、<a href="http://demo.doyoe.com/css3/box-shadow/box-shadow-cave2.htm" target="_blank">CSS3凹陷阴影应用</a></li>
+				<li>DEMO: <a href="http://demo.doyoe.com/css3/text-shadow/text-shadow-list.htm" target="_blank">CSS3文字阴影一览</a>、<a href="http://demo.doyoe.com/css3/text-shadow/fire-text.htm" target="_blank">火焰文字</a>、<a href="http://demo.doyoe.com/css3/text-shadow/neon-text.htm" target="_blank">霓虹文字</a></li>
+				<li>DEMO: <a href="http://demo.tutorialzine.com/2010/10/css3-animated-bubble-buttons/css3-buttons.html" target="_blank" class="external">CSS3惊艳按钮</a>、<a href="http://www.zurb.com/playground/radioactive-buttons" target="_blank" class="external">闪烁按钮</a>、<a href="http://www.zurb.com/blog_uploads/0000/0617/buttons-03.html" target="_blank" class="external">常用按钮</a>、<a href="http://lab.simurai.com/css/buttons/" target="_blank" class="external">Q版按钮</a></li>
+			</ul>
+		</div>
+		<div class="notes">
+			<p>CSS3将使得你可以轻松的创建更丰富多彩的页面应用，往昔的头痛问题都迎刃而解</p>
+		</div>
+	</section>
+	<section id="step17" class="step slide" data-x="4000" data-y="2000" style="position: absolute; transform: translate(-50%, -50%) translate3d(4000px, 2000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>形变扭曲效果</h1>
+		<div class="cont">
+			<p class="img"><img src="./notecopy_files/fu.png" alt="CSS3 2d transform fu"></p>
+			<ul>
+				<li>DEMO: <a href="http://demo.doyoe.com/css3/2d-transform/fu.htm" target="_blank">CSS3福到了效果</a></li>
+				<li>DEMO: <a href="http://www.paulrhayes.com/experiments/cube/multiCubes.html" target="_blank" class="external">3D cubes</a></li>
+			</ul>
+		</div>
+	</section>
+	<section id="step18" class="step slide" data-x="5000" data-y="2000" style="position: absolute; transform: translate(-50%, -50%) translate3d(5000px, 2000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>过渡、动画效果</h1>
+		<div class="cont">
+			<p class="img"><img src="./notecopy_files/clock.png" alt="CSS3 radius"></p>
+			<ul>
+				<li>DEMO: <a href="http://www.impressivewebs.com/demo-files/css3-animated-scene/" target="_blank" class="external">昼夜更替</a>、<a href="http://neography.com/experiment/circles/solarsystem/#jupiter" target="_blank" class="external">太阳系</a>、<a href="https://developer.mozilla.org/zh-CN/demos/detail/the-planetarium/launch" target="_blank" class="external">The Planetarium</a></li>
+				<li>DEMO: <a href="http://css-tricks.com/examples/CSS3Clock/" target="_blank" class="external">时钟</a>、<a href="http://www.romancortes.com/blog/pure-css-coke-can/" target="_blank" class="external">Coke Can</a>、<a href="http://daneden.me/animate/" target="_blank" class="external">Animate集合</a></li>
+			</ul>
+		</div>
+		<div class="notes">
+			<p>CSS3过渡与动画在部分程度上简化了之前需要由js或者flash来实现的效果</p>
+		</div>
+		<footer>
+			<a href="http://webdesignerwall.com/trends/47-amazing-css3-animation-demos" target="_blank" class="external">47 Amazing CSS3 Animation Demos</a>
+		</footer>
+	</section>
+	<section class="step" data-x="5000" data-y="4000" data-rotate="0" id="step-24" style="position: absolute; transform: translate(-50%, -50%) translate3d(5000px, 4000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1 class="header">激动人心的JS API</h1>
+	</section>
+	<section id="step19" class="step slide" data-x="5000" data-y="3000" style="position: absolute; transform: translate(-50%, -50%) translate3d(5000px, 3000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>Web Storage</h1>
+		<div class="cont">
+			<ul>
+				<li>sessionStorage</li>
+				<li>localStorage</li>
+			</ul>
+		</div>
+		<div class="notes">
+			<p>客户端的本地存储能力，根据W3C Web Storage的说明，Web Storage的存储空间至少有5MB。Web Storage 分为两种， sessionStorage 和 localStorage，顾名思义，sessionStorage用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。</p>
+		</div>
+		<div class="cont">
+			<ul>
+				<li><a href="http://html5demos.com/storage" target="_blank" class="external">Storage Demo</a></li>
+			</ul>
+		</div>
+		<footer>
+			<a href="http://demo.doyoe.com/share/html5quest/dev.w3.org/html5/webstorage/" target="_blank" class="external">W3C Web Storage</a>
+			<a href="http://html5demos.com/" target="_blank" class="external">html5demos</a>
+		</footer>
+	</section>
+	<section id="step20" class="step slide" data-x="4000" data-y="3000" style="position: absolute; transform: translate(-50%, -50%) translate3d(4000px, 3000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>Web Socket</h1>
+		<div class="notes">
+			<p>客户端可以利用WebSocket协议和主机进行双向通信，比XmlHttpRequest更加强大、高效和减少流量及延迟。</p>
+		</div>
+		<div class="cont">
+			<ul>
+				<li><a href="http://html5demos.com/web-socket" target="_blank" class="external">Web Socket Demo</a></li>
+			</ul>
+		</div>
+		<footer>
+			<a href="http://dev.w3.org/html5/websockets/" target="_blank" class="external">W3C WebSocket API</a>
+			<a href="http://html5demos.com/" target="_blank" class="external">html5demos</a>
+		</footer>
+	</section>
+	<section id="step21" class="step slide" data-x="3000" data-y="3000" style="position: absolute; transform: translate(-50%, -50%) translate3d(3000px, 3000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>Web Workers</h1>
+		<div class="notes">
+			<p>允许客户端像C++等高级编程语言那样，将一些耗费时间的纯运算操作，以类似线程的方式来运行在非UI线程中，并以消息（Message）机制进行通信。Web Workers 是 HTML5 提供的一个javascript多线程解决方案，我们可以将一些大计算量的代码交由web Worker运行而不冻结用户界面。</p>
+		</div>
+		<div class="cont">
+			<ul>
+				<li><a href="http://www.html5rocks.com/en/tutorials/workers/basics/" target="_blank" class="external">The Basics of Web Workers</a></li>
+				<li><a href="http://html5demos.com/worker" target="_blank" class="external">Worker</a></li>
+			</ul>
+		</div>
+		<footer>
+			<a href="http://dev.w3.org/html5/workers/" target="_blank" class="external">W3C Web Workers</a>
+			<a href="http://html5demos.com/" target="_blank" class="external">html5demos</a>
+		</footer>
+	</section>
+	<section class="step" data-x="2000" data-y="4000" data-rotate="90" id="step-28" style="position: absolute; transform: translate(-50%, -50%) translate3d(2000px, 4000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(90deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1 class="header">HTML5在游戏上的进展</h1>
+	</section>
+	<section id="step22" class="step slide" data-x="2000" data-y="3000" style="position: absolute; transform: translate(-50%, -50%) translate3d(2000px, 3000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>HTML5游戏一览</h1>
+		<div class="cont">
+			<ul>
+				<li><a href="http://www.gofane.com/gofanetype.aspx" target="_blank" class="external">Cut the Rope HTML5版</a></li>
+				<li><a href="http://www.gofane.com/gofanetype.aspx" target="_blank" class="external">Space shooting game</a></li>
+				<li><a href="http://ie.microsoft.com/testdrive/HTML5/TileSwitch/Default.xhtml" target="_blank" class="external">ECMAScript 5 Tile Switch Game</a></li>
+				<li><a href="http://bejeweled.popcap.com/html5/0.9.12.9490/html5/Bejeweled.html" target="_blank" class="external">宝石迷阵</a></li>
+				<li><a href="http://xwuz.com/bubble/" target="_blank" class="external">Bubble Trouble</a></li>
+				<li><a href="http://playbiolab.com/" target="_blank" class="external">BIOLAB(仿超级玛丽)</a></li>
+				<li><a href="http://adf.ly/821527/banner/apps.nahklick.de/cnc/" target="_blank" class="external">命令与征服HTML5版</a></li>
+				<li><a href="http://www.html5china.com/html5games/zwdzjs/" target="_blank" class="external">植物大战僵尸HTML5版</a></li>
+				<li><a href="http://www.pirateslovedaisies.com/" target="_blank" class="external">海盗护菊花HTML5版</a></li>
+				<li><a href="http://www.html5china.com/html5games/tetris/" target="_blank" class="external">3D俄罗斯方块HTML5 DEMO</a></li>
+				<li><a href="http://chrome.angrybirds.com/" target="_blank" class="external">愤怒的小鸟HTML5版(需翻墙)</a></li>
+				<li><a href="http://www.mhtml5.com/games/ppt/" target="_blank" class="external">泡泡堂HTML5 DEMO</a></li>
+			</ul>
+		</div>
+	</section>
+	<section id="step23" class="step slide" data-x="1000" data-y="3000" style="position: absolute; transform: translate(-50%, -50%) translate3d(1000px, 3000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+		<h1>HTML5游戏网站</h1>
+		<ul>
+			<li>http://www.html5china.com/game/</li>
+			<li>http://canvasrider.com/tracks/all (自行车骑士)</li>
+			<li>http://html5games.com/</li>
+			<li>http://www.html5games.net/</li>
+			<li>https://chrome.google.com/webstore/category/home</li>
+			<li>https://gaming.mozillalabs.com/games/</li>
+			<li>https://chrome.google.com/webstore/category/home</li>
+			<li>http://www.canvasdemos.com/type/games/</li>
+		</ul>
+	</section>
+	<section id="big" class="step" data-x="-450" data-y="3000" data-rotate="180" data-scale="6" style="position: absolute; transform: translate(-50%, -50%) translate3d(-450px, 3000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(180deg) scaleX(6) scaleY(6) scaleZ(1); transform-style: preserve-3d;">
+        <p> Question? <b>Q&amp;A</b></p>
+    </section>
+	<section id="tiny" class="step" data-x="140" data-y="2860" data-z="-3000" data-rotate="300" data-scale="1" style="position: absolute; transform: translate(-50%, -50%) translate3d(140px, 2860px, -3000px) rotateX(0deg) rotateY(0deg) rotateZ(300deg) scaleX(1) scaleY(1) scaleZ(1); transform-style: preserve-3d;">
+        <p>The End<br><b>Thank You</b></p>
+    </section>
+	<section id="overview" class="step" data-x="2500" data-y="1500" data-scale="6" style="position: absolute; transform: translate(-50%, -50%) translate3d(2500px, 1500px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(6) scaleY(6) scaleZ(1); transform-style: preserve-3d;">
+    </section>
+</div></div>
+<script async="" src="./notecopy_files/ga.js"></script><script src="./notecopy_files/impress.js"></script>
+<!--Google Analytics-->
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-3500471-3']);
+_gaq.push(['_trackPageview']);
+(function() {
+    var ga = document.createElement('script'); ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+</body></html>

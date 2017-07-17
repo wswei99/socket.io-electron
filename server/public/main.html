@@ -1,0 +1,512 @@
+
+<html id="jsbin-com" lang="en" class="">
+
+  <head>
+    
+<!--<link rel="stylesheet" href="lib/codemirror.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/note.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="note/css/style.css"> -->
+
+    <script>
+      window['_fs_debug'] = false;
+      window['_fs_host'] = 'www.fullstory.com';
+      window['_fs_org'] = '41ZXJ';
+      window['_fs_namespace'] = 'FS';
+      (function(m, n, e, t, l, o, g, y) {
+        if(e in m && m.console && m.console.log) {
+          m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
+          return;
+        }
+        g = m[e] = function(a, b) {
+          g.q ? g.q.push([a, b]) : g._api(a, b);
+        };
+        g.q = [];
+        o = n.createElement(t);
+        o.async = 1;
+        // o.src = 'https://' + _fs_host + '/s/fs.js';
+        y = n.getElementsByTagName(t)[0];
+        y.parentNode.insertBefore(o, y);
+        g.identify = function(i, v) {
+          g(l, {
+            uid: i
+          });
+          if(v) g(l, v)
+        };
+        g.setUserVars = function(v) {
+          g(l, v)
+        };
+        g.identifyAccount = function(i, v) {
+          o = 'account';
+          v = v || {};
+          v.acctId = i;
+          g(o, v)
+        };
+        g.clearUserCookie = function(c, d, i) {
+          if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')) {
+            d = n.domain;
+            while(1) {
+              n.cookie = 'fs_uid=;domain=' + d +
+                ';path=/;expires=' + new Date(0).toUTCString();
+              i = d.indexOf('.');
+              if(i < 0) break;
+              d = d.slice(i + 1)
+            }
+          }
+        };
+      })(window, document, window['_fs_namespace'], 'script', 'user');
+    </script>
+  </head>
+
+  <body>
+    <script>
+      if(top != self) {
+        window.location = location.pathname.split('/').slice(0, -1).concat(['embed']).join('/') + (location.search ? location.search : '');
+        document.write('<' + '!--');
+      }
+    </script>
+    <script>
+      // 
+      try {
+        if(localStorage.settings === undefined || localStorage.settings.indexOf('"toppanel":false') === -1) {
+          document.body.className += ' toppanel';
+        }
+      } catch(e) {
+        // if there is no localStorage
+      }
+    </script>
+    <div id="changePage"></div>
+    <div class="pt-page" id="notePage">
+  
+      <div class="pt-content">
+
+        <div id="impress" class="impress-not-supported">  
+          <section id="step1" class="step" data-x="0" data-y="-1000" data-rotate="90">
+            <hgroup class="title">
+              <h1>ES6入门</h1>
+              <h2>@王老师</h2>
+            </hgroup>
+          </section>
+          <section id="step2" class="step slide" data-x="1000" data-y="0" >
+            <h1>什么是ES6？</h1>
+            <div class="cont">
+              <ul>
+                <li>ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得 JavaScript 语言可以用来编写复杂的大型应用程序，成为企业级开发语言。</li>
+                
+              </ul>
+            </div>
+            <h2>ES6与ES5</h2>
+            <div class="cont">
+              <ul>
+                
+                <li>es5在线转es5</li>
+                <li>网站：http://google.github.io/traceur-compiler/demo/repl.html#</li>
+                
+              </ul>
+            </div>
+          </section>
+          <section id="step3" class="step slide" data-x="2000" data-y="0">
+            <h1>es6新语法</h1>
+            <div class="cont">
+              <ul>
+                <li>let和const</li>
+                <li>这两个关键字与var相同,都是用来声明变量的.</li>
+              </ul>
+              <div class="notes">
+                <p>1.es5里面只有全局作用域和函数作用域.没有块级作用域</p>
+                <p>
+                  <pre>
+                    var a = 3;
+                    function fun(){
+                      console.log(a);//
+                      a = 4;
+                    }
+                    fun();
+                  </pre>
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="step4" class="step slide" data-x="3000" data-y="0">
+            <!-- <h1>es6新语法</h1> -->
+            <div class="cont">
+              
+              <div class="notes">
+                <p>2.let在es6中增加了块级作用域.用它声明的变量,只在let命令所在的代码块内有效.</p>
+                <p>
+                  <pre>
+                    例子1:
+                    var a = 3;
+                    if(a == 3){
+                      let b = 4;
+                    }
+                    console.log(b); // not defined
+                    例子2:
+                    let a = 3;
+                    if(true){
+                      let a = 4;
+                      console.log(a); //4
+                    }
+                  </pre>
+                </p>
+                <p>3.有一个var带来的不合理场景.原因是变量泄漏为全局变量,覆盖了之前的声明.</p>
+                <p>
+                  <pre>
+                    var a = [];
+                    for(var i = 0;i<10;i++){
+                      a[i] = function{
+                        console.log(i);
+                      }
+                    }
+                    a[6](); // 10
+                    a[0](); // 0
+                    // 用let可以有效的解决此不合理场景.
+                  </pre>
+                </p>
+                <p>4.const用来声明常量,常量一旦声明,值就不可以改变(引用数据类型的指针不可改变,但内容可以变更);</p>
+              </div>
+            </div>
+          </section>
+          <section id="step5" class="step slide" data-x="4000" data-y="0">
+            <h1>变量的解构赋值</h1>
+            <div class="cont">
+              <ul>
+                <li>es6允许你用一定的模式,从数组或者对象中提取值,对变量进行赋值,这就是解构(Destructuring).</li>
+                <li>1.数组的解构</li>
+                <div class="notes">
+                  <p>
+                    <pre>
+                      ->以前的数组操作
+                        var arr = [1,2,3];
+                        let a = arr[0];
+                        let b = arr[1];
+                        let c = arr[2];
+                      ->es6允许写成如下格式
+                        let [a,b,c] = [1,2,3];
+                        // 解构可以从数组中提取值,按照对应位置,对变量进行赋值.
+                    </pre>
+                  </p>
+                </div>
+              </ul>
+            </div>
+          </section>
+          <section id="step14" class="step slide" data-x="5000" data-y="0">
+            <div class="notes">
+              <p>嵌套数组的解构</p>
+              <p>
+                <pre>
+                  let [a,[b,[c]]] = [1,[2,[3]]];
+
+                  let [,,c] =['白百何','文章','失恋33天'];
+                  console.log(c);// '失恋33天'
+
+                  var arr = [1,2,3,4,5,6,7];
+                  let a = arr[0];
+                  let b = arr[1];
+                  let c = arr.slice(2);
+
+                  let [a,b,...c] = [1,2,3,4,5,6,7];
+                  console.log(c);// [3,4,5,6,7]
+
+                  let [a,b,c] = [1,2];
+                  console.log(c);//null undefined
+
+                  // 如果解构不成功,变量的值就等于undefined
+                </pre>
+              </p>
+            </div>
+          </section>
+          <section id="step15" class="step slide" data-x="6000" data-y="0">
+            
+            <div class="notes">
+              <p>默认值</p>
+              <p>
+                <pre>
+                  解构赋值允许指定的默认值.
+                  let [a = 1] = []; 
+                  console.log(a);// 1
+                  let [x,y = '456'] = ['a'];
+                  console.log(x);//a
+                  console.log(y);//456
+                </pre>
+              </p>
+            </div>
+            <div class="notes">
+              <p>默认值可以引用解构赋值的其他变量,但该变量必须已经声明</p>
+              <p>
+                <pre>
+                  let [x = 1,y = x] = [];
+                  console.log(x);//a
+                  console.log(y);
+                </pre>
+              </p>
+            </div>
+          </section>
+
+        </div>
+
+      </div>
+      
+    </div>
+    <main class="source public pt-page"  id="editerPage">
+      <div id="control">
+        <div class="control">
+          <div id="menuinfo">
+            <p></p>
+          </div>
+          <div class="buttons">
+            <div class="menu">
+              <a href="#file" target="_blank" class="brand button button-dropdown group button-dropdown-arrow" id="user"><img src="http://static.jsbin.com/images/favicon.svg"> File</a>
+              <div class="dropdown" id="file">
+                <div class="dropdownmenu">
+                  <a  href="javascript:;"  data-stopPropagation="true">
+                    上课
+                    <div id="div1" class="open1">
+                        <div id="div2" class="open2"></div>
+                    </div>
+                  </a>
+                  <a class="deletebin button group" data-desc="Delete bin" title="Delete this bin" href="http://jsbin.com/delete" data-shortcut="ctrl+shift+del">Delete</a>
+                  <a class="archivebin button group" data-desc="Archive bin" title="Archive this bin" href="/archive">Archive</a>
+                  <a class="unarchivebin button group" data-desc="Unrchive bin" title="Restore this bin from the archive" href="/unarchive">Unarchive</a>
+                  <hr data-desc="">
+                  <a id="addmeta" data-desc="Insert a description shown in My Bins" title="Add meta data to bin" class="button group" href="#add-description">Add description</a>
+                  <a title="Save snapshot" data-desc="Save current work, and begin new revision on next change" data-shortcut="ctrl+s" class="button save group" data-label="save" href="http://jsbin.com/save">Save snapshot</a>
+                  <a data-desc="Copy and create a new bin start at revision #1" id="clone" title="Create a new copy" class="button clone group" data-label="clone" href="http://jsbin.com/clone">Clone</a>
+                  <hr data-desc="">
+                  <a data-pro="true" data-desc="Publish the current bin to http://jsbin.com" class="button group" title="Publish the current bin to http://jsbin.com" href="http://jsbin.com/upgrade">Publish to vanity homepage</a>
+                  <a data-desc="Export individual panels to Github's gist as an anonymous user" class="export-as-gist button group" title="Create a new anonymous GitHub Gist from this bin" href="#export-to-gist">Export as gist</a>
+                  <a data-desc="Download a complete html file for this bin" id="download" title="Save to local drive" class="button download group" href="http://jsbin.com/download" data-label="download">Download</a>
+                  <a data-desc="Use content from this bin when creating new bins" class="startingpoint button group" title="Set as starting code" href="http://jsbin.com/save" data-label="save-as-template">Save as template</a>
+                  <a hidden data-desc="How to embed a bin" target="_blank" title="How to embed a bin" data-label="how-to-embed" class="button group" href="http://jsbin.com/help/how-can-i-embed-jsbin">How to embed</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="menu">
+              <span class="button group">Add library
+                <select class="library" id="library"></select>
+              </span>
+            </div>
+          </div>
+          <div id="start-saving" class="menu">
+            <a href="/jadupuxuna/save" class="save button group">Start saving your work</a>
+          </div>
+          <div id="panels"></div>
+
+        </div>
+      </div>
+      </div>
+      <div id="load-cached" tabindex="-1">
+        <a href="#">Load cached copy from <span></span></a>
+      </div>
+
+      <div id="bin" class="stretch" style="opacity: 0; filter:alpha(opacity=0);">
+        <div class="inline-menu menu">
+          <ul>
+            <li class="add-library"><span>Add library</span>
+              <select class="library" id="alt-library"></select>
+            </li>
+            <li class="run-with-js">
+              <a tabindex="0" role="button">Run with JS</a>
+            </li>
+            <li>
+              <a tabindex="0" role="button" class="save">Save</a>
+            </li>
+            <li>
+              <a tabindex="0" role="button" class="show-share">Share</a>
+            </li>
+            <li>
+              <a tabindex="0" role="button" aria-label="More bin links and information" class="more">…</a>
+            </li>
+          </ul>
+        </div>
+        <div id="source" class="binview stretch">
+        </div>
+        <div id="panelswaiting">
+          <div class="code stretch html panel">
+            <div role="menubar" class="label menu" tabindex="0"><span class="name"><strong><a href="#htmlprocessors" role="menuitem" class="fake-dropdown button-dropdown">Processor</a></strong></span>
+              <div class="dropdown" id="htmlprocessors">
+                <div role="menu" aria-hidden="true" class="dropdownmenu processorSelector" data-type="html">
+                  <a role="menuitemradio" aria-checked="true" href="#html" data-label="HTML">HTML</a>
+                  <a role="menuitemradio" href="#markdown">Markdown</a>
+                  <a role="menuitemradio" href="#jade">Jade</a>
+                  <a href="#convert">Convert to HTML</a>
+                </div>
+              </div>
+            </div>
+            <div class="editbox">
+              <textarea aria-label="HTML Code Panel" spellcheck="false" autocapitalize="none" autocorrect="off" id="html"></textarea>
+            </div>
+          </div>
+          <div class="code stretch javascript panel">
+            <div role="menubar" class="label menu" tabindex="0"><span class="name"><strong><a role="menuitem" class="fake-dropdown button-dropdown" href="#javascriptprocessors">Processor</a></strong></span>
+              <div class="dropdown" id="javascriptprocessors">
+                <div role="menu" aria-hidden="true" class="dropdownmenu processorSelector" data-type="javascript">
+                  <a role="menuitemradio" aria-checked="true" href="#javascript" data-label="JavaScript">JavaScript</a>
+                  <a role="menuitemradio" href="#babel">ES6 / Babel</a>
+                  <a role="menuitemradio" href="#jsx">JSX (React)</a>
+                  <a role="menuitemradio" href="#coffeescript">CoffeeScript</a>
+                  <a role="menuitemradio" href="#traceur">Traceur</a>
+                  <a role="menuitemradio" href="#typescript">TypeScript</a>
+                  <a role="menuitemradio" href="#processing">Processing</a>
+                  <a role="menuitemradio" href="#livescript">LiveScript</a>
+                  <a role="menuitemradio" href="#clojurescript">ClojureScript</a>
+                  <a role="menuitem" href="#convert">Convert to JavaScript</a>
+                </div>
+              </div>
+            </div>
+            <div class="editbox">
+              <textarea aria-label="JavaScript Code Panel" spellcheck="false" autocapitalize="none" autocorrect="off" id="javascript"></textarea>
+            </div>
+          </div>
+          <div class="code stretch css panel">
+            <div role="menubar" class="label menu" tabindex="0"><span class="name"><strong><a role="menuitem" class="fake-dropdown button-dropdown" href="#cssprocessors">Processor</a></strong></span>
+              <div class="dropdown" id="cssprocessors">
+                <div role="menu" aria-hidden="true" class="dropdownmenu processorSelector" data-type="css">
+                  <a role="menuitemradio" aria-checked="true" href="#css" data-label="CSS">CSS</a>
+                  <a role="menuitemradio" href="#less">Less</a>
+                  <a role="menuitemradio" href="#myth">Myth</a>
+                  <a role="menuitemradio" href="#sass" data-label="Sass">Sass <span class="small">with Compass</span></a>
+                  <a role="menuitemradio" href="#scss" data-label="SCSS">SCSS <span class="small">with Compass</span></a>
+                  <a role="menuitemradio" href="#stylus">Stylus</a>
+                  <a role="menuitem" href="#convert">Convert to CSS</a>
+                </div>
+              </div>
+            </div>
+            <div class="editbox">
+              <textarea aria-label="CSS Code Panel" spellcheck="false" autocapitalize="none" autocorrect="off" id="css"></textarea>
+            </div>
+          </div>
+          <div class="stretch console panel">
+            <div class="label">
+              <span class="name"><strong>Console</strong></span>
+              <span class="options">
+          <button id="runconsole" title="ctrl + enter">Run</button>
+          <button id="clearconsole" title="ctrl + l">Clear</button>
+        </span>
+            </div>
+            <div id="console" class="stretch">
+              <ul id="output"></ul>
+              <form>
+                <textarea aria-label="Console Panel" id="exec" spellcheck="false" autocapitalize="none" rows="1" autocorrect="off"></textarea>
+              </form>
+            </div>
+          </div>
+          <div id="live" class="stretch live panel">
+            <div class="label">
+              <span class="name"><strong>Output</strong></span>
+              <span class="options">
+          <button id="runwithalerts" title="ctrl + enterInclude alerts, prompts &amp; confirm boxes">Run with JS</button>
+          <label>Auto-run JS<input type="checkbox" id="enablejs"></label>
+          <a target="_blank" title="Live preview" id="jsbinurl" class="" href="/jadupuxuna"><img src="http://static.jsbin.com/images/popout.png"></a>
+        </span>
+              <span class="size"></span>
+            </div>
+          </div>
+        </div>
+        <form id="saveform" method="post" action="/jadupuxuna/save">
+          <input type="hidden" name="method">
+          <input type="hidden" name="_csrf" value="YV517IZ5-uOyZDsaDsOgtpj-HDm494DtZfMk">
+        </form>
+      </div>
+      <div id="tip" class=" notification">
+        <p>
+          You can jump to the latest bin by adding <code>/latest</code> to your URL
+        </p>
+        <a class="dismiss" href="#">Dismiss x</a>
+      </div>
+      <div id="keyboardHelp" class="modal">
+        <div>
+          <h2>Keyboard Shortcuts</h2>
+          <table>
+            <thead>
+              <tr>
+                <th class="shortcut">Shortcut</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ctrl + [num]</td>
+                <td>Toggle nth panel</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <small>
+              <input type="checkbox" id="enablealt" class="enablealt">
+              <label for="enablealt">Require alt key, leaving cmd+1, 2 etc for tab switching.</label>
+            </small>
+                </td>
+              </tr>
+              <tr>
+                <td>ctrl + 0</td>
+                <td>Close focused panel</td>
+              </tr>
+              <tr>
+                <td>ctrl + enter</td>
+                <td>Re-render output.<br>If console visible: run JS in console</td>
+              </tr>
+              <tr>
+                <td>Ctrl + l</td>
+                <td>Clear the console</td>
+              </tr>
+              <tr>
+                <td>ctrl + /</td>
+                <td>Toggle comment on selected lines</td>
+              </tr>
+              <tr>
+                <td>ctrl + ]</td>
+                <td>Indents selected lines</td>
+              </tr>
+              <tr>
+                <td>ctrl + [</td>
+                <td>Unindents selected lines</td>
+              </tr>
+              <tr>
+                <td>tab</td>
+                <td>Code complete &amp;
+                  <a href="http://docs.emmet.io/" target="_blank">Emmet</a> expand</td>
+              </tr>
+              <tr>
+                <td>ctrl + shift + L</td>
+                <td>Beautify code in active panel</td>
+              </tr>
+              <tr>
+                <td>ctrl + s</td>
+                <td>Save &amp; lock current Bin from further changes</td>
+              </tr>
+              <tr>
+                <td>ctrl + shift + s</td>
+                <td>Open the share options</td>
+              </tr>
+              <tr>
+                <td>ctrl + y</td>
+                <td>Archive Bin</td>
+              </tr>
+              <tr>
+                <td colspan="2"><small><br><a href="http://jsbin.com/help/keyboard-shortcuts" target="_blank">Complete list of JS Bin shortcuts</a></small></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+<!-- 
+      <script type="text/javascript" src="js/user.js"></script>
+      <script type="text/javascript" src="js/jsbin-4.0.4.js"></script>
+      <script type="text/javascript" src="js/socket.io.js"></script>
+      <script type="text/javascript" src="js/getIP.js"></script>
+      <script type="text/javascript" src="js/wang.js"></script>
+      <script type="text/javascript" src="js/start.js"></script>
+      <script type="text/javascript" src="js/modernizr.custom.js"></script>
+      <script type="text/javascript" src="js/animation.js"></script>
+      <script type="text/javascript" src="note/js/impress.js"></script> -->
+  </body>
+
+</html>

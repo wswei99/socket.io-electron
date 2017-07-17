@@ -1,0 +1,17 @@
+{
+  "name": "7.14electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "packager":"electron-packager ./app TeacherWang --all --out ./OutApp --version 1.0.0 --overwrite --icon=./app/images/icon.ico"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-packager": "^8.7.2",
+    "electron-prebuilt": "^1.4.13"
+  }
+}

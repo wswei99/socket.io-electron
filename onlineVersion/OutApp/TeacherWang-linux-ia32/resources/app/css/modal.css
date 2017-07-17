@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.bg-model{position:absolute;
+	top:0%;
+	left:0%;
+	/*display:none;*/
+	background:rgba(0,0,0,0.3);
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:9999;
+}
+.bg-model .content{
+	width: 100%;
+	height: 100%;
+	margin: auto;  
+    position: absolute;  
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0; 
+	border-top: 1px solid transparent;
+	background-image: url('../images/modal/loading.gif');
+	background-size: 100% 100%;
+}
+
+.bg-model .content .dialog{
+	background-color: #ff8a00;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	display: none;
+}
+.bg-model .content .ipAddress p{
+	background-color: #ff8a00;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	margin-top: 8px;
+}
+.bg-model .content .ipServer{
+	background-color: #ff8a00;
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+	display: none;
+}
+.bg-model .content .ipServer input{
+	width: 76%;
+	height: 60%;
+	vertical-align: middle;
+	font-size: 12px;
+}
+.bg-model .content .ipServer button{
+	background: lightgreen;
+	border-radius: 5px;
+	vertical-align: middle;
+	height: 18px;
+	cursor: pointer;
+
+}
